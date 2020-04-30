@@ -1,0 +1,89 @@
+# online2-wav-nnet3-latgen-faster --do-endpointing=false --frames-per-chunk=20 --extra-left-context-initial=0 --online=true --frame-subsampling-factor=3 --config=exp/chain/tdnn1r_sp_online/conf/online.conf --min-active=200 --max-active=7000 --beam=15.0 --lattice-beam=6.0 --acoustic-scale=1.0 --word-symbol-table=exp/chain/tree_a_sp/graph/words.txt exp/chain/tdnn1r_sp_online/final.mdl exp/chain/tree_a_sp/graph/HCLG.fst ark:/ASR_project/data/test/split4/3/spk2utt "ark,s,cs:wav-copy scp,p:/ASR_project/data/test/split4/3/wav.scp ark:- |" "ark:|lattice-scale --acoustic-scale=10.0 ark:- ark:- | gzip -c >exp/chain/tdnn1r_sp_online/decode_dev/lat.3.gz" 
+# Started at Wed Apr 29 16:49:19 UTC 2020
+#
+online2-wav-nnet3-latgen-faster --do-endpointing=false --frames-per-chunk=20 --extra-left-context-initial=0 --online=true --frame-subsampling-factor=3 --config=exp/chain/tdnn1r_sp_online/conf/online.conf --min-active=200 --max-active=7000 --beam=15.0 --lattice-beam=6.0 --acoustic-scale=1.0 --word-symbol-table=exp/chain/tree_a_sp/graph/words.txt exp/chain/tdnn1r_sp_online/final.mdl exp/chain/tree_a_sp/graph/HCLG.fst ark:/ASR_project/data/test/split4/3/spk2utt 'ark,s,cs:wav-copy scp,p:/ASR_project/data/test/split4/3/wav.scp ark:- |' 'ark:|lattice-scale --acoustic-scale=10.0 ark:- ark:- | gzip -c >exp/chain/tdnn1r_sp_online/decode_dev/lat.3.gz' 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:ComputeDerivedVars():ivector-extractor.cc:183) Computing derived variables for iVector extractor
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:ComputeDerivedVars():ivector-extractor.cc:204) Done.
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:RemoveOrphanNodes():nnet-nnet.cc:948) Removed 1 orphan nodes.
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:RemoveOrphanComponents():nnet-nnet.cc:847) Removing 2 orphan components.
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:Collapse():nnet-utils.cc:1472) Added 1 components, removed 2
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:CompileLooped():nnet-compile-looped.cc:345) Spent 0.0408139 seconds in looped compilation.
+wav-copy scp,p:/ASR_project/data/test/split4/3/wav.scp ark:- 
+WARNING (wav-copy[5.5.0~1494-e5a5]:EnsureObjectLoaded():util/kaldi-table-inl.h:310) Failed to open file waves/M6031019821_0000
+WARNING (wav-copy[5.5.0~1494-e5a5]:EnsureObjectLoaded():util/kaldi-table-inl.h:310) Failed to open file waves/M6031019821_0003
+WARNING (wav-copy[5.5.0~1494-e5a5]:EnsureObjectLoaded():util/kaldi-table-inl.h:310) Failed to open file waves/M6031019821_0004
+WARNING (wav-copy[5.5.0~1494-e5a5]:EnsureObjectLoaded():util/kaldi-table-inl.h:310) Failed to open file waves/M6031019821_0008
+WARNING (wav-copy[5.5.0~1494-e5a5]:EnsureObjectLoaded():util/kaldi-table-inl.h:310) Failed to open file waves/M6031019821_0015
+WARNING (wav-copy[5.5.0~1494-e5a5]:EnsureObjectLoaded():util/kaldi-table-inl.h:310) Failed to open file waves/M6031019821_0016
+WARNING (wav-copy[5.5.0~1494-e5a5]:EnsureObjectLoaded():util/kaldi-table-inl.h:310) Failed to open file waves/M6031019821_0017
+WARNING (wav-copy[5.5.0~1494-e5a5]:EnsureObjectLoaded():util/kaldi-table-inl.h:310) Failed to open file waves/M6031019821_0019
+WARNING (wav-copy[5.5.0~1494-e5a5]:EnsureObjectLoaded():util/kaldi-table-inl.h:310) Failed to open file waves/M6031019821_0021
+WARNING (wav-copy[5.5.0~1494-e5a5]:EnsureObjectLoaded():util/kaldi-table-inl.h:310) Failed to open file waves/M6031019821_0025
+WARNING (wav-copy[5.5.0~1494-e5a5]:EnsureObjectLoaded():util/kaldi-table-inl.h:310) Failed to open file waves/M6031019821_0026
+WARNING (wav-copy[5.5.0~1494-e5a5]:EnsureObjectLoaded():util/kaldi-table-inl.h:310) Failed to open file waves/M6031019821_0029
+WARNING (wav-copy[5.5.0~1494-e5a5]:EnsureObjectLoaded():util/kaldi-table-inl.h:310) Failed to open file waves/M6031019821_0033
+WARNING (wav-copy[5.5.0~1494-e5a5]:EnsureObjectLoaded():util/kaldi-table-inl.h:310) Failed to open file waves/M6031019821_0034
+WARNING (wav-copy[5.5.0~1494-e5a5]:EnsureObjectLoaded():util/kaldi-table-inl.h:310) Failed to open file waves/M6031019821_0035
+WARNING (wav-copy[5.5.0~1494-e5a5]:EnsureObjectLoaded():util/kaldi-table-inl.h:310) Failed to open file waves/M6031019821_0036
+WARNING (wav-copy[5.5.0~1494-e5a5]:EnsureObjectLoaded():util/kaldi-table-inl.h:310) Failed to open file waves/M6031019821_0042
+WARNING (wav-copy[5.5.0~1494-e5a5]:EnsureObjectLoaded():util/kaldi-table-inl.h:310) Failed to open file waves/M6031019821_0044
+WARNING (wav-copy[5.5.0~1494-e5a5]:EnsureObjectLoaded():util/kaldi-table-inl.h:310) Failed to open file waves/M6031019821_0045
+WARNING (wav-copy[5.5.0~1494-e5a5]:EnsureObjectLoaded():util/kaldi-table-inl.h:310) Failed to open file waves/M6031019821_0046
+WARNING (wav-copy[5.5.0~1494-e5a5]:EnsureObjectLoaded():util/kaldi-table-inl.h:310) Failed to open file waves/M6031019821_0047
+WARNING (wav-copy[5.5.0~1494-e5a5]:EnsureObjectLoaded():util/kaldi-table-inl.h:310) Failed to open file waves/M6031019821_0050
+WARNING (wav-copy[5.5.0~1494-e5a5]:EnsureObjectLoaded():util/kaldi-table-inl.h:310) Failed to open file waves/M6031019821_0062
+WARNING (wav-copy[5.5.0~1494-e5a5]:EnsureObjectLoaded():util/kaldi-table-inl.h:310) Failed to open file waves/M6031019821_0067
+WARNING (wav-copy[5.5.0~1494-e5a5]:EnsureObjectLoaded():util/kaldi-table-inl.h:310) Failed to open file waves/M6031019821_0069
+WARNING (wav-copy[5.5.0~1494-e5a5]:EnsureObjectLoaded():util/kaldi-table-inl.h:310) Failed to open file waves/M6031019821_0072
+WARNING (wav-copy[5.5.0~1494-e5a5]:EnsureObjectLoaded():util/kaldi-table-inl.h:310) Failed to open file waves/M6031019821_0081
+WARNING (wav-copy[5.5.0~1494-e5a5]:EnsureObjectLoaded():util/kaldi-table-inl.h:310) Failed to open file waves/M6031019821_0083
+WARNING (wav-copy[5.5.0~1494-e5a5]:EnsureObjectLoaded():util/kaldi-table-inl.h:310) Failed to open file waves/M6031019821_0087
+WARNING (wav-copy[5.5.0~1494-e5a5]:EnsureObjectLoaded():util/kaldi-table-inl.h:310) Failed to open file waves/M6031019821_0093
+WARNING (wav-copy[5.5.0~1494-e5a5]:EnsureObjectLoaded():util/kaldi-table-inl.h:310) Failed to open file waves/M6031019821_0096
+WARNING (wav-copy[5.5.0~1494-e5a5]:EnsureObjectLoaded():util/kaldi-table-inl.h:310) Failed to open file waves/M6031019821_0098
+WARNING (wav-copy[5.5.0~1494-e5a5]:EnsureObjectLoaded():util/kaldi-table-inl.h:310) Failed to open file waves/M6031019821_0100
+LOG (wav-copy[5.5.0~1494-e5a5]:main():wav-copy.cc:68) Copied 0 wave files
+WARNING (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:210) Did not find audio for utterance M6031019821_0000
+WARNING (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:210) Did not find audio for utterance M6031019821_0003
+WARNING (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:210) Did not find audio for utterance M6031019821_0004
+WARNING (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:210) Did not find audio for utterance M6031019821_0008
+WARNING (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:210) Did not find audio for utterance M6031019821_0015
+WARNING (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:210) Did not find audio for utterance M6031019821_0016
+WARNING (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:210) Did not find audio for utterance M6031019821_0017
+WARNING (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:210) Did not find audio for utterance M6031019821_0019
+WARNING (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:210) Did not find audio for utterance M6031019821_0021
+WARNING (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:210) Did not find audio for utterance M6031019821_0025
+WARNING (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:210) Did not find audio for utterance M6031019821_0026
+WARNING (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:210) Did not find audio for utterance M6031019821_0029
+WARNING (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:210) Did not find audio for utterance M6031019821_0033
+WARNING (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:210) Did not find audio for utterance M6031019821_0034
+WARNING (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:210) Did not find audio for utterance M6031019821_0035
+WARNING (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:210) Did not find audio for utterance M6031019821_0036
+WARNING (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:210) Did not find audio for utterance M6031019821_0042
+WARNING (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:210) Did not find audio for utterance M6031019821_0044
+WARNING (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:210) Did not find audio for utterance M6031019821_0045
+WARNING (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:210) Did not find audio for utterance M6031019821_0046
+WARNING (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:210) Did not find audio for utterance M6031019821_0047
+WARNING (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:210) Did not find audio for utterance M6031019821_0050
+WARNING (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:210) Did not find audio for utterance M6031019821_0062
+WARNING (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:210) Did not find audio for utterance M6031019821_0067
+WARNING (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:210) Did not find audio for utterance M6031019821_0069
+WARNING (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:210) Did not find audio for utterance M6031019821_0072
+WARNING (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:210) Did not find audio for utterance M6031019821_0081
+WARNING (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:210) Did not find audio for utterance M6031019821_0083
+WARNING (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:210) Did not find audio for utterance M6031019821_0087
+WARNING (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:210) Did not find audio for utterance M6031019821_0093
+WARNING (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:210) Did not find audio for utterance M6031019821_0096
+WARNING (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:210) Did not find audio for utterance M6031019821_0098
+WARNING (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:210) Did not find audio for utterance M6031019821_0100
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:Print():online-timing.cc:36) Timing stats: real-time factor was -nan (note: this cannot be less than one.)
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:Print():online-timing.cc:38) Average delay was -nan seconds.
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:Print():online-timing.cc:42) Percentage of time spent idling was -nan
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:Print():online-timing.cc:44) Longest delay was 0 seconds for utterance ''
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:302) Decoded 0 utterances, 33 with errors.
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:304) Overall likelihood per frame was -nan per frame over 0 frames.
+lattice-scale --acoustic-scale=10.0 ark:- ark:- 
+LOG (lattice-scale[5.5.0~1494-e5a5]:main():lattice-scale.cc:107) Done 0 lattices.
+WARNING (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:Close():kaldi-io.cc:515) Pipe wav-copy scp,p:/ASR_project/data/test/split4/3/wav.scp ark:- | had nonzero return status 256
+# Accounting: time=1 threads=1
+# Ended (code 1) at Wed Apr 29 16:49:20 UTC 2020, elapsed time 1 seconds
