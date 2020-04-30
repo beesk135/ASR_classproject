@@ -1,14 +1,14 @@
-# online2-wav-nnet3-latgen-faster --do-endpointing=false --frames-per-chunk=20 --extra-left-context-initial=0 --online=true --frame-subsampling-factor=3 --config=exp/chain/tdnn1r_sp_online/conf/online.conf --min-active=200 --max-active=7000 --beam=15.0 --lattice-beam=6.0 --acoustic-scale=1.0 --word-symbol-table=exp/chain/tree_a_sp/graph/words.txt exp/chain/tdnn1r_sp_online/final.mdl exp/chain/tree_a_sp/graph/HCLG.fst ark:/ASR_project/data/test/split1/1/spk2utt "ark,s,cs:wav-copy scp,p:/ASR_project/data/test/split1/1/wav.scp ark:- |" "ark:|lattice-scale --acoustic-scale=10.0 ark:- ark:- | gzip -c >exp/chain/tdnn1r_sp_online/decode_dev/lat.1.gz" 
-# Started at Wed Apr 29 16:51:18 UTC 2020
+# online2-wav-nnet3-latgen-faster --do-endpointing=false --frames-per-chunk=20 --extra-left-context-initial=0 --online=true --frame-subsampling-factor=3 --config=exp/chain/tdnn1r_sp_online/conf/online.conf --min-active=200 --max-active=7000 --beam=15.0 --lattice-beam=6.0 --acoustic-scale=1.0 --word-symbol-table=exp/chain/tree_a_sp/graph/words.txt exp/chain/tdnn1r_sp_online/final.mdl exp/chain/tree_a_sp/graph/HCLG.fst ark:data/dev/split1/1/spk2utt "ark,s,cs:wav-copy scp,p:data/dev/split1/1/wav.scp ark:- |" "ark:|lattice-scale --acoustic-scale=10.0 ark:- ark:- | gzip -c >exp/chain/tdnn1r_sp_online/decode_dev/lat.1.gz" 
+# Started at Thu Apr 30 03:50:00 UTC 2020
 #
-online2-wav-nnet3-latgen-faster --do-endpointing=false --frames-per-chunk=20 --extra-left-context-initial=0 --online=true --frame-subsampling-factor=3 --config=exp/chain/tdnn1r_sp_online/conf/online.conf --min-active=200 --max-active=7000 --beam=15.0 --lattice-beam=6.0 --acoustic-scale=1.0 --word-symbol-table=exp/chain/tree_a_sp/graph/words.txt exp/chain/tdnn1r_sp_online/final.mdl exp/chain/tree_a_sp/graph/HCLG.fst ark:/ASR_project/data/test/split1/1/spk2utt 'ark,s,cs:wav-copy scp,p:/ASR_project/data/test/split1/1/wav.scp ark:- |' 'ark:|lattice-scale --acoustic-scale=10.0 ark:- ark:- | gzip -c >exp/chain/tdnn1r_sp_online/decode_dev/lat.1.gz' 
+online2-wav-nnet3-latgen-faster --do-endpointing=false --frames-per-chunk=20 --extra-left-context-initial=0 --online=true --frame-subsampling-factor=3 --config=exp/chain/tdnn1r_sp_online/conf/online.conf --min-active=200 --max-active=7000 --beam=15.0 --lattice-beam=6.0 --acoustic-scale=1.0 --word-symbol-table=exp/chain/tree_a_sp/graph/words.txt exp/chain/tdnn1r_sp_online/final.mdl exp/chain/tree_a_sp/graph/HCLG.fst ark:data/dev/split1/1/spk2utt 'ark,s,cs:wav-copy scp,p:data/dev/split1/1/wav.scp ark:- |' 'ark:|lattice-scale --acoustic-scale=10.0 ark:- ark:- | gzip -c >exp/chain/tdnn1r_sp_online/decode_dev/lat.1.gz' 
 LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:ComputeDerivedVars():ivector-extractor.cc:183) Computing derived variables for iVector extractor
 LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:ComputeDerivedVars():ivector-extractor.cc:204) Done.
 LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:RemoveOrphanNodes():nnet-nnet.cc:948) Removed 1 orphan nodes.
 LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:RemoveOrphanComponents():nnet-nnet.cc:847) Removing 2 orphan components.
 LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:Collapse():nnet-utils.cc:1472) Added 1 components, removed 2
-LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:CompileLooped():nnet-compile-looped.cc:345) Spent 0.0315721 seconds in looped compilation.
-wav-copy scp,p:/ASR_project/data/test/split1/1/wav.scp ark:- 
+LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:CompileLooped():nnet-compile-looped.cc:345) Spent 0.00909281 seconds in looped compilation.
+wav-copy scp,p:data/dev/split1/1/wav.scp ark:- 
 WARNING (wav-copy[5.5.0~1494-e5a5]:EnsureObjectLoaded():util/kaldi-table-inl.h:310) Failed to open file waves/F6030177021_0001
 WARNING (wav-copy[5.5.0~1494-e5a5]:EnsureObjectLoaded():util/kaldi-table-inl.h:310) Failed to open file waves/F6030177021_0003
 WARNING (wav-copy[5.5.0~1494-e5a5]:EnsureObjectLoaded():util/kaldi-table-inl.h:310) Failed to open file waves/F6030177021_0006
@@ -288,6 +288,6 @@ LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-l
 LOG (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:main():online2-wav-nnet3-latgen-faster.cc:304) Overall likelihood per frame was -nan per frame over 0 frames.
 lattice-scale --acoustic-scale=10.0 ark:- ark:- 
 LOG (lattice-scale[5.5.0~1494-e5a5]:main():lattice-scale.cc:107) Done 0 lattices.
-WARNING (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:Close():kaldi-io.cc:515) Pipe wav-copy scp,p:/ASR_project/data/test/split1/1/wav.scp ark:- | had nonzero return status 256
-# Accounting: time=1 threads=1
-# Ended (code 1) at Wed Apr 29 16:51:19 UTC 2020, elapsed time 1 seconds
+WARNING (online2-wav-nnet3-latgen-faster[5.5.0~1494-e5a5]:Close():kaldi-io.cc:515) Pipe wav-copy scp,p:data/dev/split1/1/wav.scp ark:- | had nonzero return status 256
+# Accounting: time=0 threads=1
+# Ended (code 1) at Thu Apr 30 03:50:00 UTC 2020, elapsed time 0 seconds
