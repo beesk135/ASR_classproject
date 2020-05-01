@@ -1,0 +1,282 @@
+# lattice-scale --inv-acoustic-scale=41 "ark:gunzip -c exp/chain/tdnn1r_sp_online/decode_dev/lat.*.gz|" ark:- | lattice-add-penalty --word-ins-penalty=0.0 ark:- ark:- | lattice-best-path --word-symbol-table=exp/chain/tree_a_sp/graph/words.txt ark:- ark,t:exp/chain/tdnn1r_sp_online/decode_dev/scoring/41.0.0.tra 
+# Started at Thu Apr 30 14:47:59 UTC 2020
+#
+lattice-best-path --word-symbol-table=exp/chain/tree_a_sp/graph/words.txt ark:- ark,t:exp/chain/tdnn1r_sp_online/decode_dev/scoring/41.0.0.tra 
+lattice-add-penalty --word-ins-penalty=0.0 ark:- ark:- 
+lattice-scale --inv-acoustic-scale=41 'ark:gunzip -c exp/chain/tdnn1r_sp_online/decode_dev/lat.*.gz|' ark:- 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance F6030177021_0001, best cost 51.4772 + -32.0672 = 19.4099 over 57 frames.
+F6030177021_0001 โกวาจี ฉัน แตงไทย 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance F6030177021_0003, best cost 37.7747 + -20.9789 = 16.7958 over 40 frames.
+F6030177021_0003 โกวาจี ผม ตาล 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance F6030177021_0006, best cost 37.5941 + -16.6674 = 20.9267 over 40 frames.
+F6030177021_0006 ล็อกอิน นาม บี 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance F6030177021_0007, best cost 39.6735 + -19.8334 = 19.8401 over 43 frames.
+F6030177021_0007 ล็อกอิน นาม ตาล 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance F6030177021_0008, best cost 45.9128 + -23.7418 = 22.1709 over 52 frames.
+F6030177021_0008 ล็อกอิน นาม แตงไทย 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance F6030177021_0010, best cost 27.446 + -12.0981 = 15.3478 over 29 frames.
+F6030177021_0010 ล็อกเอาท์ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance F6030177021_0012, best cost 37.9384 + -19.126 = 18.8123 over 42 frames.
+F6030177021_0012 เข้า หน้า ค้นหา 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance F6030177021_0016, best cost 45.2603 + -28.1285 = 17.1318 over 48 frames.
+F6030177021_0016 เปิด โหมด หมายเลข สาม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance F6030177021_0017, best cost 39.7161 + -18.1092 = 21.6069 over 40 frames.
+F6030177021_0017 เปิด โหมด หมายเลข สี่ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance F6030177021_0019, best cost 42.8696 + -20.4408 = 22.4289 over 53 frames.
+F6030177021_0019 ย้อน วีดีโอ ไป หนึ่ง นาที 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance F6030177021_0032, best cost 30.1872 + -13.0878 = 17.0994 over 29 frames.
+F6030177021_0032 พอส วีดีโอ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance F6030177021_0038, best cost 22.3315 + -11.339 = 10.9925 over 21 frames.
+F6030177021_0038 ปิด ลูป 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance F6030177021_0047, best cost 51.2339 + -27.1429 = 24.091 over 62 frames.
+F6030177021_0047 เพิ่ม ความเร็ว วีดีโอ ศูนย์ จุด หนึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance F6030177021_0052, best cost 49.1535 + -20.3443 = 28.8092 over 59 frames.
+F6030177021_0052 ลด ความเร็ว วีดีโอ ศูนย์ จุด ห้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance F6030177021_0054, best cost 52.6183 + -28.3363 = 24.2819 over 64 frames.
+F6030177021_0054 เพิ่ม ความเร็ว วีดีโอ ศูนย์ จุด ห้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance F6030177021_0055, best cost 36.1962 + -17.9407 = 18.2555 over 42 frames.
+F6030177021_0055 เพิ่ม ความเร็ว วีดีโอ หนึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance F6030177021_0056, best cost 44.5399 + -21.9798 = 22.5601 over 56 frames.
+F6030177021_0056 ย้อน วีดีโอ ไป ห้า วินาที 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance F6030177021_0057, best cost 43.8467 + -25.5742 = 18.2725 over 55 frames.
+F6030177021_0057 ย้อน วีดีโอ ไป ห้า วินาที 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance F6030177021_0072, best cost 61.9844 + -37.8901 = 24.0943 over 69 frames.
+F6030177021_0072 ตั้งค่า เสียง ศูนย์ เปอร์เซนต์ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance F6030177021_0076, best cost 46.5128 + -25.7736 = 20.7392 over 50 frames.
+F6030177021_0076 ตั้งค่า เสียง ร้อย เปอร์เซนต์ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance F6030177021_0078, best cost 22.9861 + -11.3512 = 11.6349 over 24 frames.
+F6030177021_0078 ตั้งค่า เสียง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance F6030177021_0079, best cost 55.844 + -31.9539 = 23.89 over 68 frames.
+F6030177021_0079 ปรับ คุณภาพ วิดีโอ ระดับ ต่ำ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance F6030177021_0083, best cost 55.8736 + -29.7832 = 26.0903 over 62 frames.
+F6030177021_0083 เอา ออก จาก รายการ โปรด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance F6030177021_0085, best cost 56.2721 + -33.132 = 23.1401 over 66 frames.
+F6030177021_0085 ตั้ง เป็น วิดีโอ ทอป ทู 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance F6030177021_0090, best cost 14.9498 + -8.43613 = 6.51368 over 11 frames.
+F6030177021_0090 สี่ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance F6030177021_0092, best cost 10.1657 + -3.16338 = 7.00234 over 6 frames.
+F6030177021_0092 เพิ่ม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance F6030177021_0093, best cost 14.6807 + -6.64809 = 8.03262 over 9 frames.
+F6030177021_0093 เจ็ด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance F6030177021_0100, best cost 51.6619 + -23.5188 = 28.1432 over 56 frames.
+F6030177021_0100 วิดีโอ ชื่อ อะไร 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance F6030177021_0101, best cost 36.824 + -20.1253 = 16.6987 over 38 frames.
+F6030177021_0101 ขอ ชื่อ วิดีโอ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031018121_0001, best cost 86.8277 + -53.9866 = 32.8411 over 108 frames.
+M6031018121_0001 โกวาจี ฉัน แตงไทย 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031018121_0002, best cost 77.2851 + -42.6692 = 34.6159 over 97 frames.
+M6031018121_0002 โกวาจี ผม บี 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031018121_0004, best cost 84.8128 + -41.5925 = 43.2203 over 100 frames.
+M6031018121_0004 โกวาจี ผม กลาง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031018121_0005, best cost 75.8994 + -39.2909 = 36.6084 over 83 frames.
+M6031018121_0005 ตั้ง เป็น ผ่าน การ จำ เสียง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031018121_0008, best cost 72.0812 + -41.1591 = 30.9222 over 82 frames.
+M6031018121_0008 ตั้ง เป็น นาม แตงไทย 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031018121_0014, best cost 68.8429 + -40.8832 = 27.9597 over 73 frames.
+M6031018121_0014 เซ็ต เปิด โหมด หมายเลข หนึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031018121_0015, best cost 73.693 + -42.8793 = 30.8137 over 80 frames.
+M6031018121_0015 เซ็ต เปิด โหมด หมายเลข สอง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031018121_0016, best cost 70.2282 + -42.2223 = 28.0059 over 75 frames.
+M6031018121_0016 เซ็ต เปิด โหมด หมายเลข สาม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031018121_0017, best cost 70.2292 + -35.2304 = 34.9988 over 75 frames.
+M6031018121_0017 เซ็ต เปิด โหมด หมายเลข สี่ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031018121_0022, best cost 71.5825 + -36.6309 = 34.9516 over 76 frames.
+M6031018121_0022 เซ็ต เลือก วิดีโอ หมายเลข สี่ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031018121_0027, best cost 60.9942 + -34.1484 = 26.8457 over 78 frames.
+M6031018121_0027 เล่น วีดิโอ ที่ แสดง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031018121_0029, best cost 77.0761 + -37.8275 = 39.2486 over 88 frames.
+M6031018121_0029 เล่น ต่อ จาก วีดีโอ หนึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031018121_0030, best cost 54.8041 + -25.9464 = 28.8577 over 58 frames.
+M6031018121_0030 เซ็ต เปิด โปรแกรม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031018121_0034, best cost 56.1886 + -24.013 = 32.1756 over 64 frames.
+M6031018121_0034 หยุด วีดีโอ หนึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031018121_0037, best cost 49.9511 + -19.9945 = 29.9566 over 51 frames.
+M6031018121_0037 เซ็ต เปิด ลูป 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031018121_0038, best cost 44.1236 + -17.0868 = 27.0368 over 48 frames.
+M6031018121_0038 สิ โกวาจี 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031018121_0039, best cost 57.5496 + -36.5913 = 20.9583 over 70 frames.
+M6031018121_0039 เล่น ตอน ต่อไป 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031018121_0040, best cost 57.5496 + -35.8849 = 21.6647 over 70 frames.
+M6031018121_0040 เล่น ตอน ที่แล้ว 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031018121_0043, best cost 79.263 + -51.5706 = 27.6924 over 100 frames.
+M6031018121_0043 เซ็ต ความเร็ว วีดีโอ สอง เท่า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031018121_0045, best cost 92.171 + -63.648 = 28.523 over 119 frames.
+M6031018121_0045 เซ็ต ความเร็ว วีดีโอ ศูนย์ จุด ห้า เท่า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031018121_0046, best cost 73.733 + -47.1482 = 26.5848 over 94 frames.
+M6031018121_0046 เพิ่ม ความเร็ว วีดีโอ สอง เท่า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031018121_0050, best cost 65.3083 + -39.7208 = 25.5875 over 84 frames.
+M6031018121_0050 เพิ่ม ความเร็ว วีดีโอ หนึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031018121_0056, best cost 75.4485 + -46.9656 = 28.4829 over 100 frames.
+M6031018121_0056 ย้อน วีดีโอ ไป หนึ่ง นาที 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031018121_0057, best cost 76.4237 + -48.4991 = 27.9246 over 102 frames.
+M6031018121_0057 ย้อน วีดีโอ ไป ห้า วินาที 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031018121_0060, best cost 81.8714 + -53.3215 = 28.5499 over 109 frames.
+M6031018121_0060 ย้อน วีดีโอ ไป สาม สิบ วินาที 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031018121_0063, best cost 84.5284 + -49.4274 = 35.101 over 101 frames.
+M6031018121_0063 เซ็ต เลื่อน วีดีโอ ไป สิบ วินาที 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031018121_0064, best cost 90.9573 + -55.4047 = 35.5526 over 109 frames.
+M6031018121_0064 เซ็ต เลื่อน วีดีโอ ไป สิบ ห้า วินาที 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031018121_0065, best cost 93.811 + -58.2473 = 35.5637 over 113 frames.
+M6031018121_0065 เซ็ต เลื่อน วีดีโอ ไป สาม สิบ วินาที 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031018121_0066, best cost 83.2282 + -46.9106 = 36.3176 over 98 frames.
+M6031018121_0066 เซ็ต เลื่อน วีดีโอ ไป หนึ่ง นาที 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031018121_0070, best cost 104.5 + -57.3661 = 47.1339 over 120 frames.
+M6031018121_0070 เซ็ต เล่น วีดิโอ ที่ สาม ใน สี่ ของ ตอน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031018121_0071, best cost 44.5878 + -17.4484 = 27.1394 over 51 frames.
+M6031018121_0071 สี่ ของ ตอน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031018121_0074, best cost 89.0028 + -46.9846 = 42.0182 over 102 frames.
+M6031018121_0074 ตั้งค่า เสียง ห้า สิบ เปอร์เซนต์ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031018121_0078, best cost 48.9711 + -20.3471 = 28.6239 over 49 frames.
+M6031018121_0078 เซ็ต ลด เสียง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031018121_0083, best cost 71.1228 + -42.7378 = 28.385 over 84 frames.
+M6031018121_0083 เอา ออก จาก รายการ โปรด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031018121_0087, best cost 31.3871 + -12.7365 = 18.6506 over 35 frames.
+M6031018121_0087 หนึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031018121_0088, best cost 36.5458 + -17.1066 = 19.4392 over 42 frames.
+M6031018121_0088 สอง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031018121_0091, best cost 36.6136 + -16.1355 = 20.4781 over 40 frames.
+M6031018121_0091 สอง ห้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031018121_0092, best cost 26.5278 + -9.40564 = 17.1222 over 30 frames.
+M6031018121_0092 แสดง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031018121_0093, best cost 34.8456 + -12.7398 = 22.1058 over 42 frames.
+M6031018121_0093 แสดง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031018121_0100, best cost 59.4979 + -33.0903 = 26.4076 over 65 frames.
+M6031018121_0100 แสดง วิดีโอ ชื่อ อะไร 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031019821_0000, best cost 34.4886 + -23.5549 = 10.9336 over 40 frames.
+M6031019821_0000 โกวาจี 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031019821_0003, best cost 74.5115 + -41.9401 = 32.5714 over 93 frames.
+M6031019821_0003 โกวาจี ผม ตาล 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031019821_0004, best cost 66.1947 + -31.7606 = 34.4341 over 81 frames.
+M6031019821_0004 โกวาจี ผม ฟร้องซ์ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031019821_0008, best cost 79.277 + -38.8963 = 40.3807 over 89 frames.
+M6031019821_0008 กลาง ล็อกอิน นาม แตงไทย 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031019821_0015, best cost 50.7307 + -19.8148 = 30.9159 over 59 frames.
+M6031019821_0015 ศูนย์ จุด สอง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031019821_0016, best cost 54.9644 + -28.5483 = 26.416 over 62 frames.
+M6031019821_0016 เปิด โหมด หมายเลข สาม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031019821_0017, best cost 50.2425 + -21.009 = 29.2335 over 54 frames.
+M6031019821_0017 แสดง โหมด หมายเลข สี่ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031019821_0019, best cost 65.3442 + -26.4322 = 38.9119 over 67 frames.
+M6031019821_0019 เซ็ต เลือก วิดีโอ หมายเลข หนึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031019821_0021, best cost 54.9091 + -26.8463 = 28.0629 over 60 frames.
+M6031019821_0021 เลือก วิดีโอ หมายเลข สาม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031019821_0025, best cost 58.4945 + -29.4457 = 29.0487 over 63 frames.
+M6031019821_0025 แสดง วิดีโอ อันดับ สอง ของ ฉัน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031019821_0026, best cost 74.0794 + -36.9594 = 37.12 over 86 frames.
+M6031019821_0026 แสดง วิดีโอ อันดับ สาม ของ ฉัน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031019821_0029, best cost 55.435 + -25.4189 = 30.016 over 58 frames.
+M6031019821_0029 เล่น ต่อ จาก วิดีโอ เดิม 
+LOG (lattice-scale[5.5.0~1494-e5a5]:main():lattice-scale.cc:107) Done 135 lattices.
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031019821_0033, best cost 55.0339 + -21.2387 = 33.7951 over 66 frames.
+M6031019821_0033 ตั้ง เป็น วิดีโอ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031019821_0034, best cost 46.8227 + -17.0091 = 29.8137 over 53 frames.
+M6031019821_0034 หยุด วีดีโอ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031019821_0035, best cost 50.9343 + -19.9436 = 30.9907 over 52 frames.
+M6031019821_0035 ขยาย หน้าจอ สอง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031019821_0036, best cost 56.3342 + -20.5858 = 35.7484 over 54 frames.
+M6031019821_0036 เซ็ต ย้อน สอง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031019821_0042, best cost 74.8424 + -41.4056 = 33.4368 over 94 frames.
+M6031019821_0042 เซ็ต ความเร็ว วีดีโอ ศูนย์ จุด ห้า เท่า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031019821_0044, best cost 129.435 + -67.3349 = 62.1004 over 153 frames.
+M6031019821_0044 กลาง เซ็ต ความเร็ว วีดีโอ ศูนย์ จุด เจ็ด ห้า เท่า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031019821_0045, best cost 72.0698 + -41.7038 = 30.366 over 90 frames.
+M6031019821_0045 เซ็ต ความเร็ว วีดีโอ ศูนย์ จุด ห้า เท่า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031019821_0046, best cost 61.2544 + -30.0049 = 31.2495 over 76 frames.
+M6031019821_0046 เพิ่ม ความเร็ว วีดีโอ สอง เท่า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031019821_0047, best cost 93.055 + -50.729 = 42.326 over 109 frames.
+M6031019821_0047 กลาง เพิ่ม ความเร็ว วีดีโอ ศูนย์ จุด หนึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031019821_0050, best cost 69.0083 + -34.2092 = 34.7991 over 76 frames.
+M6031019821_0050 กลาง เพิ่ม ความเร็ว วีดีโอ หนึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031019821_0062, best cost 66.5117 + -33.4854 = 33.0262 over 74 frames.
+M6031019821_0062 ตั้ง เลื่อน วีดีโอ ไป ห้า วินาที 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031019821_0067, best cost 85.9035 + -42.7218 = 43.1817 over 91 frames.
+M6031019821_0067 กลาง เล่น วีดิโอ ที่ เวลา ศูนย์ นาที 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031019821_0069, best cost 87.385 + -40.6739 = 46.7111 over 91 frames.
+M6031019821_0069 กลาง เล่น วีดิโอ ที่ หนึ่ง ใน สี่ ของ ตอน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031019821_0072, best cost 75.7313 + -37.7708 = 37.9605 over 79 frames.
+M6031019821_0072 กลาง ตั้งค่า เสียง ร้อย เปอร์เซนต์ 
+LOG (lattice-add-penalty[5.5.0~1494-e5a5]:main():lattice-add-penalty.cc:62) Done adding word insertion penalty to 135 lattices.
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031019821_0081, best cost 94.5111 + -38.7112 = 55.7999 over 104 frames.
+M6031019821_0081 กลาง ปรับ คุณภาพ วิดีโอ ระดับ สี่ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031019821_0083, best cost 72.5091 + -41.8925 = 30.6166 over 86 frames.
+M6031019821_0083 เอา ออก จาก รายการ โปรด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031019821_0087, best cost 76.2416 + -38.53 = 37.7116 over 90 frames.
+M6031019821_0087 กลาง หนึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031019821_0093, best cost 55.3043 + -24.3233 = 30.9811 over 57 frames.
+M6031019821_0093 กลาง เจ็ด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031019821_0096, best cost 115.927 + -66.6268 = 49.3004 over 136 frames.
+M6031019821_0096 กลาง แนะนำ หนัง หน่อย สิ โกวาจี 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031019821_0098, best cost 72.2605 + -36.101 = 36.1595 over 84 frames.
+M6031019821_0098 แสดง วิดีโอ ความยาว เท่าไหร่ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031019821_0100, best cost 87.2028 + -51.2625 = 35.9402 over 103 frames.
+M6031019821_0100 ลด วิดีโอ ชื่อ อะไร 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031020321_0007, best cost 49.3776 + -25.5211 = 23.8564 over 57 frames.
+M6031020321_0007 ล็อกอิน นาม ตาล 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031020321_0008, best cost 50.0717 + -26.871 = 23.2006 over 58 frames.
+M6031020321_0008 ล็อกอิน นาม แตงไทย 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031020321_0009, best cost 50.0707 + -25.7321 = 24.3386 over 58 frames.
+M6031020321_0009 ล็อกอิน นาม ฟร้องซ์ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031020321_0013, best cost 46.6933 + -26.5129 = 20.1804 over 51 frames.
+M6031020321_0013 แสดง โหมด ค้นหา 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031020321_0014, best cost 45.2613 + -26.77 = 18.4913 over 48 frames.
+M6031020321_0014 เปิด โหมด หมายเลข หนึ่ง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031020321_0016, best cost 48.0329 + -31.1019 = 16.931 over 52 frames.
+M6031020321_0016 เปิด โหมด หมายเลข สาม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031020321_0018, best cost 43.875 + -25.6537 = 18.2213 over 46 frames.
+M6031020321_0018 เปิด โหมด หมายเลข ห้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031020321_0020, best cost 52.8297 + -32.0852 = 20.7445 over 57 frames.
+M6031020321_0020 เลือก วิดีโอ หมายเลข สอง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031020321_0022, best cost 52.1375 + -30.8697 = 21.2678 over 56 frames.
+M6031020321_0022 เลือก วิดีโอ หมายเลข สี่ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031020321_0023, best cost 52.8307 + -29.1607 = 23.6699 over 57 frames.
+M6031020321_0023 เลือก วิดีโอ หมายเลข ห้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031020321_0024, best cost 67.8403 + -39.8209 = 28.0194 over 76 frames.
+M6031020321_0024 แสดง วิดีโอ อันดับ หนึ่ง ของ ฉัน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031020321_0025, best cost 70.9711 + -44.7245 = 26.2466 over 81 frames.
+M6031020321_0025 แสดง วิดีโอ อันดับ สอง ของ ฉัน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031020321_0029, best cost 58.9007 + -35.8789 = 23.0218 over 63 frames.
+M6031020321_0029 เล่น ต่อ จาก วิดีโอ เดิม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031020321_0030, best cost 33.3019 + -18.7683 = 14.5336 over 36 frames.
+M6031020321_0030 เปิด โปรแกรม 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031020321_0033, best cost 33.0869 + -16.0301 = 17.0568 over 37 frames.
+M6031020321_0033 เล่น วีดีโอ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031020321_0040, best cost 39.5278 + -26.3543 = 13.1735 over 44 frames.
+M6031020321_0040 เล่น ตอน ที่แล้ว 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031020321_0054, best cost 64.4027 + -44.1113 = 20.2915 over 81 frames.
+M6031020321_0054 ลด ความเร็ว วีดีโอ ศูนย์ จุด ห้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031020321_0058, best cost 55.9533 + -37.8331 = 18.1201 over 73 frames.
+M6031020321_0058 ย้อน วีดีโอ ไป สิบ วินาที 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031020321_0060, best cost 62.4633 + -39.4514 = 23.0119 over 81 frames.
+M6031020321_0060 ย้อน วีดีโอ ไป สาม สิบ วินาที 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031020321_0062, best cost 57.8299 + -36.683 = 21.1469 over 70 frames.
+M6031020321_0062 เลื่อน วีดีโอ ไป ห้า วินาที 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031020321_0065, best cost 66.7424 + -44.6237 = 22.1187 over 82 frames.
+M6031020321_0065 เลื่อน วีดีโอ ไป สาม สิบ วินาที 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031020321_0068, best cost 50.1412 + -24.8788 = 25.2624 over 57 frames.
+M6031020321_0068 เล่น วีดิโอ ที่ กลาง ตอน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031020321_0070, best cost 73.4886 + -44.6534 = 28.8352 over 86 frames.
+M6031020321_0070 เล่น วีดิโอ ที่ สาม ใน สี่ ของ ตอน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031020321_0071, best cost 25.7587 + -14.0768 = 11.6819 over 28 frames.
+M6031020321_0071 ตั้งค่า เสียง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031020321_0073, best cost 61.4307 + -38.8244 = 22.6063 over 69 frames.
+M6031020321_0073 ตั้งค่า เสียง ยี่ สิบ ห้า เปอร์เซนต์ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031020321_0076, best cost 52.058 + -29.6396 = 22.4184 over 58 frames.
+M6031020321_0076 ตั้งค่า เสียง ร้อย เปอร์เซนต์ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031020321_0077, best cost 27.4618 + -16.7948 = 10.667 over 28 frames.
+M6031020321_0077 เพิ่ม เสียง 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031020321_0082, best cost 41.8367 + -26.5105 = 15.3262 over 47 frames.
+M6031020321_0082 ตั้ง เป็น รายการ โปรด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031020321_0083, best cost 52.4078 + -33.3693 = 19.0385 over 57 frames.
+M6031020321_0083 เอา ออก จาก รายการ โปรด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031020321_0084, best cost 51.4191 + -28.5807 = 22.8384 over 59 frames.
+M6031020321_0084 ตั้ง เป็น วิดีโอ ทอป วัน 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031020321_0094, best cost 18.4341 + -9.99043 = 8.44367 over 16 frames.
+M6031020321_0094 แปด 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031020321_0095, best cost 23.9793 + -12.9873 = 10.992 over 24 frames.
+M6031020321_0095 เก้า 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:99) For utterance M6031020321_0097, best cost 60.0364 + -32.7429 = 27.2934 over 68 frames.
+M6031020321_0097 ขอ ชื่อ ผู้ อัพโหลด วีดีโอ 
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:124) Overall cost per frame is 0.400468 = 0.873052 [graph] + -0.472584 [acoustic] over 8947 frames.
+LOG (lattice-best-path[5.5.0~1494-e5a5]:main():lattice-best-path.cc:128) Done 135 lattices, failed for 0
+# Accounting: time=0 threads=1
+# Ended (code 0) at Thu Apr 30 14:47:59 UTC 2020, elapsed time 0 seconds

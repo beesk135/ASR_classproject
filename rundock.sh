@@ -4,14 +4,14 @@
 # docker exec -it cc761932b7ee /bin/bash
 cp /ASR_project/scripts/prepare_LG.sh /kaldi/egs/librispeech/s5/
 cp /ASR_project/scripts/AM_chain.zip /kaldi/egs/librispeech/s5/
-cp -r /ASR_project/waves
-cp -rf /ASR_project/data/ /kaldi/egs/librispeech/s5/data
+cp -r /ASR_project/waves /kaldi/egs/librispeech/s5/waves
+cp -r /ASR_project/data/ /kaldi/egs/librispeech/s5/data
 cd /kaldi/egs/librispeech/s5/
 unzip AM_chain.zip 
 chmod u+x prepare_LG.sh 
 
 sed -i -e 's/\r$//' prepare_LG.sh
-prepare_LG.sh /ASR_project/g2p/g2plex.txt /ASR_project/lm/arpa.lm  exp/chain/tree_a_sp/phones.txt data/local/dict data/lang
+./prepare_LG.sh /ASR_project/g2p/g2plex.txt /ASR_project/lm/arpa.lm  exp/chain/tree_a_sp/phones.txt data/local/dict data/lang
 
 utils/mkgraph.sh \
   --self-loop-scale 1.0 data/lang \
@@ -20,11 +20,17 @@ utils/mkgraph.sh \
 
 DECODER
 cp -rf /ASR_project/data/train /kaldi/egs/librispeech/s5/data/test
-cp -rf /ASR_project/data/test /kaldi/egs/librispeech/s5/data/dev
+cp -rTf /ASR_project/data/train /kaldi/egs/librispeech/s5/data/dev
+
 steps/online/nnet3/decode.sh --acwt 1.0 --post-decode-acwt 10.0 --nj 1 exp/chain/tree_a_sp/graph data/dev exp/chain/tdnn1r_sp_online/decode_dev
 steps/online/nnet3/decode.sh \          
   --acwt 1.0 --post-decode-acwt 10.0 --nj 4 \
-  exp/chain/tree_a_sp/graph data/dev exp/chain/tdnn1p_sp_online/decode_dev
+  exp/chain/tree_a_sp/graph data/dev exp/chain/tdnn1r_sp_online/decode_dev
+
+steps/online/nnet3/decode.sh --acwt 1.0 --post-decode-acwt 10.0 --nj 1 --scoring-opts "--min-lmwt 5 --max-lmwt 15" exp/chain/tree_a_sp/graph data/dev exp/chain/tdnn1r_sp_online/decode_dev
+cat exp/chain/tdnn1r_sp_online/decode_dev/wer_* | grep wer_
+cp -r exp/chain/tdnn1r_sp_online/decode_dev/ /ASR_project/result_decode/
+cp -rT exp/chain/tdnn1r_sp_online/decode_dev/ /ASR_project/result_decode/
 
 # cp -r /ASR_project/data/test/waves/ /kaldi/egs/librispeech/s5/data/testwaves
 cp -r exp /ASR_project/exp
